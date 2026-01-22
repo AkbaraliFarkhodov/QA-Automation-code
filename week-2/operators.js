@@ -78,3 +78,13 @@ console.log("5" === "5");
 console.log(5 == 5);
 
 ////
+
+let n1 = 6;
+console.log(n1 * 10);
+console.log(6 * 10);
+
+let n2 = 10;
+n2++;
+console.log(n2);
+n2--;
+console.log(n2);
