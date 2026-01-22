@@ -108,3 +108,19 @@ if (uka === "alijon") {
 
 // uka is equal to "Akbar", if aka is equal to "alijon" then print "Aliaskar", or if uka = "akbar" then print "akasi",
 // or if uka is equal to "ila" then print "name spelled wrong", if non is true then just print "this is weird"
+
+let soda = 23;
+
+switch (soda) {
+  case 20:
+    console.log("I got you a coke");
+    break;
+  case 24:
+    console.log("I got you a Fanta");
+    break;
+  case 21:
+    console.log("I got you a Sprite");
+    break;
+  default:
+    console.log("What kind of sode did you get me today?");
+}
