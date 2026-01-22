@@ -46,7 +46,7 @@ console.log(typeof student);
 
 // DIFFERENCE BETWEEN MUTABLE AND IMMUTABLE
 
-// MUTABLE DATA - Mutable means the value can be changed after it is created.
+// MUTABLE DATA (NON PRIMITIVE) - Mutable means the value can be changed after it is created.
 
 let student2 = {
   name: "aliya",
@@ -58,3 +58,53 @@ let student2 = {
 student.name = "ali";
 
 console.log(student);
+
+//IMMUTABLE DATA (PRIMITIVE) - Immutable means the value cannot be changed once created.
+// If you “change” it, JavaScript actually creates a new value.
+
+let student3 = "John";
+
+student3 = "aliya"; //changes value (immutable)
+console.log(student3);
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// CONTROL FLOW
+
+// IF - Executes a block of code if the condition is true
+
+let roll = 5;
+
+if (roll === 5) {
+  console.log("You did it");
+}
+// roll is equal to 5, if roll is equal to 5 then print "you did it"
+
+// IF ELSE
+
+let aka = "Akbar";
+
+if (aka === "Akbar") {
+  console.log("akbar aka");
+} else {
+  console.log("I said say it");
+}
+
+// aka is equal to "Akbar", if aka is euqal to "akbar" then print "akbar aka" or else print "I said say it"
+
+// ELSE IF
+
+let uka = "Ali";
+
+if (uka === "alijon") {
+  console.log("Aliaskar");
+} else if (uka === "akbar") {
+  console.log("akasi");
+} else if (uka === "ila") {
+  console.log("name spelled wrong");
+} else {
+  console.log("this is weird");
+}
+
+// uka is equal to "Akbar", if aka is equal to "alijon" then print "Aliaskar", or if uka = "akbar" then print "akasi",
+// or if uka is equal to "ila" then print "name spelled wrong", if non is true then just print "this is weird"
