@@ -175,10 +175,3 @@ console.log(CR7);
 //- If it exists (truthy), print `"Welcome back"`
 //- Otherwise, print `"Please sign up"`
 //> Use **logical** operators only.
-
-let username = 1;
-if (username < 5 && username > 0) {
-  console.log("Welcome Back");
-} else {
-  console.log("Please Sign Up");
-}
