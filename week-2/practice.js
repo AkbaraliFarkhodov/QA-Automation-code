@@ -124,3 +124,5 @@ switch (soda) {
   default:
     console.log("What kind of sode did you get me today?");
 }
+
+let scores = 55;
