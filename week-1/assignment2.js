@@ -183,19 +183,23 @@ if (studentScore > 90) {
 
 //QUESTION #10
 
-let soda = "Pepsi";
+let soda = 23;
 
 switch (soda) {
-  case "coke":
+  case 20:
     console.log("I got you a coke");
     break;
-  case "Fanta":
+  case 24:
     console.log("I got you a Fanta");
     break;
-  case "Sprite":
+  case 21:
     console.log("I got you a Sprite");
     break;
   default:
     console.log("What kind of sode did you get me today?");
     console.log("I got Pepsi for you");
 }
+
+let ali = 31;
+let what = "stop";
+let you = "lol";
