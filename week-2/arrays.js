@@ -8,16 +8,16 @@ console.log(fruits);
 console.log(fruits[0]);
 console.log(fruits[4]);
 
-//3 updateing array elemnts
+//3 updating array elemnts
 
 fruits[1] = "mango";
 console.log(fruits);
 
-// 4. .l
+// 4. .length - returns how many elements inside an array
 
 console.log(fruits.length);
 
-// methods that retuen new array
+// methods that return new array
 
 // 5. concat() - merges arrays into one array
 
@@ -46,56 +46,73 @@ console.log(numbers);
 const slicedNumbersArray = numbers.slice(1, 4);
 console.log(slicedNumbersArray);
 
-// --------- methods that change the original array
+const myFavoriteColors = ["green", "yellow", "blue", "red", "white"];
+const mySlicedFavoriteColors = myFavoriteColors.slice(1, 4);
+console.log(slicedNumbersArray);
 
-// copying an array
+// --------- methods that change the ORIGINAL array --------------
 
-const fruitsFromGroceryStore = ["kiwi", "banana", "cherry"];
-const richardFruits = [...fruitsFromGroceryStore];
+// 1. copying an array
 
-console.log(fruitsFromGroceryStore);
+const originalFruits = ["kiwi", "banana", "cherry"];
+const richardFruits = [...originalFruits];
+
+console.log(originalFruits);
 console.log(richardFruits);
 
 // .push() - adds a new element at the end of the array
 
+console.log(originalFruits);
 richardFruits.push("coconut");
 console.log(richardFruits);
 
 // 3. .pop() - removes last element from the array
 
+console.log(originalFruits);
+richardFruits.pop();
+console.log(richardFruits);
+
 // 4. .unshift() - add element to the beggining of the array
 
+console.log(originalFruits);
 richardFruits.unshift("grapes");
 console.log(richardFruits);
 
 // 5. .shift() - removes the first element from an array
 
+console.log(originalFruits);
 richardFruits.shift("grapes");
 console.log(richardFruits);
 
 //6. .reverse() - reverse an array
 
+console.log(originalFruits);
 console.log(richardFruits.reverse());
 
 //7.  .sort() - sorts the array -> commonly used with numbers
 
-const newNumbers = [3, 6, 8, 15, 1, 77, 32, 62];
-newNumbers.sort;
+const newNumbers = [3, 6, 8, 2, 1, 77, 32, 62];
+newNumbers.sort((a, b) => a - b);
+console.log(newNumbers);
+
+const stringArrays = ["A", "C", "Z", "B"];
+stringArrays.sort();
+console.log(stringArrays);
 
 // ------------ methods that find an element in the array ---
 
 // 1. .index() - returns the index of  a specific element inside an array
 
-const akbarAliFavoritecolors = ["black", "white", "red", "red"];
-console.log(akbarAliFavoritecolors.indexOf("red"));
+const akbarAliFavoriteColors = ["black", "white", "red", "blue"];
+console.log(akbarAliFavoriteColors.indexOf("red"));
 
 // 2. .lastindexOf() - Returns the last index of a specific elemnt inside an array. alwyas returnns
 
-console.log(akbarAliFavoritecolors.lastIndexOf("red"));
+console.log(akbarAliFavoriteColors.lastIndexOf("red"));
 
 // 3. .at() - gets an element at a specific position
 
-console.log(akbarAliFavoritecolors.at(1));
+console.log(akbarAliFavoriteColors.at(1));
 
 // 4. .includes() - checks if an elemnt exists inside an array
 
@@ -107,6 +124,6 @@ console.log(trainLanes.includes("E"));
 
 // .join() - converts an array into string
 const kaungFruitsArray = ["apple", "banana", "kiwi"];
-const kaungFruitsString = kaungFruitsArray.join("/"); // -> "["apple", "banana", "kiwi"]"
+const kaungFruitsString = kaungFruitsArray.join(""); // -> "["apple", "banana", "kiwi"]"
 
 console.log(kaungFruitsString);
