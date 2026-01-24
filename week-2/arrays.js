@@ -124,6 +124,17 @@ console.log(trainLanes.includes("E"));
 
 // .join() - converts an array into string
 const kaungFruitsArray = ["apple", "banana", "kiwi"];
-const kaungFruitsString = kaungFruitsArray.join(""); // -> "["apple", "banana", "kiwi"]"
+const kaungFruitsString = kaungFruitsArray.join(); // -> "["apple", "banana", "kiwi"]"
 
 console.log(kaungFruitsString);
+
+// 2. Array.from() - creates a new array from string
+
+const str = "Hello";
+const chars = Array.from(str);
+console.log(chars);
+
+// 3. array.isarray() - checks if a value is an arrray
+
+const nycNumbers = [1, 2, 3, 4, 5];
+console.log(Array.isArray(nycNumbers));
