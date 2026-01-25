@@ -75,9 +75,47 @@ let whatever = "John Wick is the best";
 console.log(whatever.indexOf("is")); // 10
 console.log(whatever.indexOf("the")); // 13
 
-// .startsWith() & endsWith() checks wether a string starts or ends with a certain substring
+// 11.  .startsWith() & endsWith() checks wether a string starts or ends with a certain substring
 
 let aircraft = "B2 Stealth Bomber";
 
 console.log(aircraft.startsWith("B2")); // true
-console.log(aircraft.endsWith("stealth")); //
+console.log(aircraft.endsWith("stealth")); // false
+
+// Template literals
+
+// 12. Template literals make working with strings simpler and cleaner
+
+let name = "Akbar";
+let college = "Queens College";
+let country = "Uzbekistan";
+let age = 26;
+let message = `Hello my name is ${name} and I am from ${country}. I am ${age} years old and I graduated ${college}.`;
+console.log(message);
+
+// 13. Multi-Line strings
+
+let poem = `
+Roses are red,
+Violets are blue,
+JavaScript is fun,
+and so are you
+`;
+console.log(poem);
+
+// Expressions inside Template Literals
+// You can perform calculations or function calls directly inside ${}
+
+let a = 5;
+let b = 10;
+
+console.log(`The sum of ${a} and ${b} is ${a + b}`);
+
+// Combining String Methods + Template Literals
+
+// You can combine multiple techniques for dynamic, formatted strings
+
+let user = "alice";
+let score = 150;
+
+console.log(`player: ${user.toUpperCase()}, Score: ${score}`);
