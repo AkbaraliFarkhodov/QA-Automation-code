@@ -104,7 +104,7 @@ console.log(Math.random()); // 0.8284240248040644
 
 // FORMULA
 
-//Math.floor(Math.random() * (Max - Min + 1)) + Min;
+// Math.floor(Math.random() * (Max - Min + 1)) + Min;
 
 // Example: Generating a number between 1000 and 200
 
