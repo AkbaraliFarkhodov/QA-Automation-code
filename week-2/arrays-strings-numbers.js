@@ -183,7 +183,118 @@ console.log(javaScript.endsWith("coding")); // true
 
 //1. Split the sentence into words
 
-let sentence = "Amazing";
-console.log(sentence.)
+let sentence = "Amazing weather today";
+console.log(sentence.split(" ")); // [ 'Amazing', 'weather', 'today' ]
 
 //2. Join two strings using a method (not `+`)
+
+console.log(sentence.concat(" ", highSchool)); // Amazing weather today NEW TOWN HIGH SCHOOL
+
+//### Task 11: Template Literals
+
+//- car brand
+
+let carBrand = "BMW";
+
+//- car year (has to be in the past)
+
+let carYear = 2024;
+
+//- car age (think about how you get the car age)
+
+let carAge = 2;
+
+//Create a sentence using the variables and print the output
+
+console.log(
+  `I got my ${carBrand} ${carAge} years ago and year it was made is ${carYear}`, // I got my BMW 2 years ago and year it was made is 2024
+);
+
+//## PART 3: NUMBERS
+
+//### 🔢 Task 12: Rounding
+
+//1. Round a decimal normally
+
+console.log(Math.round(23.7)); // 24
+
+//2. Always round down
+
+console.log(Math.floor(43.9)); // 43
+
+//3. Always round up
+
+console.log(Math.ceil(2.1)); // 3
+
+//4. Remove the decimal part
+
+console.log(Math.trunc(12.2349)); // 12
+
+//### ask 13: Formatting
+
+//1. Format a number to **2 decimal places**
+
+console.log((2.9).toFixed(2)); // 2.90
+
+//2. Explain (in comments) why the result is **not a number**
+// need to ask this form tohir
+
+//### Task 14: Conversions
+
+//1. Convert a numeric string into a number
+
+console.log(Number("34")); // 34
+
+//2. Convert a decimal string into an integer
+
+console.log(parseInt("55.23")); // 55
+
+//3. Convert a decimal string into a float
+
+console.log(parseFloat("23.12")); // 23.12
+
+//### Task 15: Checking
+
+//1. Check if a value is **Not a Number**
+
+console.log(isNaN("hello")); //true
+
+//2. Check if a number is an integer
+
+console.log(Number.isInteger(10)); // true
+
+//### Task 16: Math Utilities
+
+//1. Find the absolute value of a number
+
+console.log(Math.abs(-39)); // 39
+
+//2. Find the smallest number
+
+console.log(Math.min(10, 45, 23)); // 10
+
+//3. Find the largest number
+
+console.log(Math.max(32, 41, 42)); // 42
+
+//4. Raise a number to a power
+
+console.log(Math.pow(20, 12)); // 4096000000000000
+
+//5. Find the square root of a number
+
+console.log(Math.sqrt(49)); // 7
+
+//### Task 17: Random Numbers
+
+//1. Generate a random number between 0 and 1
+
+console.log(Math.random()); // 0.11397314458032715
+
+//2. Generate a random whole number between **1 and 10**
+
+console.log(Math.random() * (10 - 1)) + 1; // 6.649036327791587
+
+//3. Explain the formula in comments
+
+// the formula helps to generate a random number between any 2 numbers
