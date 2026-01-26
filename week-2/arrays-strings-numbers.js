@@ -298,3 +298,13 @@ console.log(Math.random() * (10 - 1)) + 1; // 6.649036327791587
 //3. Explain the formula in comments
 
 // the formula helps to generate a random number between any 2 numbers
+
+//## FINAL MINI CHALLENGE
+
+//Write a program that:
+
+//1. Takes a sentence about cars
+
+//2. Cleans it (trim + case change)
+//3. Splits it into words
+//4. Prints the number of words using a template literal
