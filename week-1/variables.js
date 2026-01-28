@@ -27,11 +27,4 @@ let weight = 200;
 weight = 210;
 
 const fullName = "Akbarali Farkhodov";
-console.log(
-  fullName,
-  weight,
-  countryOne,
-  countryTwo,
-  myLocation,
-  myCountryAndCity
-);
+console.log(fullName, weight, countryOne, countryTwo, myLocation, myCountry);
