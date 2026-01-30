@@ -2,7 +2,8 @@ let carBrandArray = ["MERC", "BMW", "TOYOTA", "MAZDA", "PORCHE"];
 
 let examScoresArray = [55, 67, 98, 74, 82];
 
-let carReliablitiy = "Toyota is the most reliable car brand in the world";
+let carReliablitiy =
+  "    Toyota is the most reliable car brand in the world.   ";
 
 let GPA = 3.5;
 
@@ -15,12 +16,13 @@ let GPA = 3.5;
 // 3. Converts the string to lowercase
 // 4. Returns the cleaned string
 
-// function carBrand(carRealiablitiy) {
-//   let noSpace = carRealiablitiy.trim();
-//   let lowercase = noSpace.toLowerCase();
-//   return lowercase;
-// }
-//console.log(carBrand("          Toyota Is Better. "));
+function carBrand(str) {
+  const noSpaceStr = str.trim();
+  const lowerCaseStr = noSpaceStr.toLowerCase();
+  return lowerCaseStr;
+}
+
+console.log(carBrand(carReliablitiy));
 
 // ### First & Last Character
 
@@ -33,8 +35,8 @@ let GPA = 3.5;
 
 // 📌 Must handle strings with spaces.
 
-function string() {
-  let trim = carReliablitiy.trim();
+function string(str) {
+  let trim = str.trim();
   let first = trim[0];
   let last = trim[trim.length - 1];
   return { first, last };
@@ -51,12 +53,13 @@ console.log(string());
 
 // 📌 Use string and array methods only.
 
-function string2() {
-  let split = carReliablitiy.split(" ");
-  let length = carReliablitiy.length;
+function string2(sentence) {
+  let trim = sentence.trim();
+  let split = trim.split(" ");
+  let length = split.length;
   return { split, length };
 }
-console.log(string2());
+console.log(string2(carReliablitiy));
 
 // Task 4: Brand Checker
 
@@ -105,3 +108,15 @@ function task6() {
   return brandArray;
 }
 console.log(task6());
+
+// Task 7: Safe Rounding
+
+// Write a function that:
+
+// 1. Takes a number
+// 2. If the value is not a number → return `"Invalid number"`
+// 3. Otherwise:
+//     - Round it normally
+//     - Return the result
+
+function task7() {}
