@@ -27,6 +27,27 @@ function add(num1, num2) {
 
 add(5, 2);
 
+function printNumber(num1, num2) {
+  if (num1 > num2) {
+    console.log("Number is bigger");
+  } else {
+    console.log("Number is smaller");
+  }
+}
+
+printNumber(3, 1);
+
+//4. Default Parameters
+
+function greetStudent(name = "student") {
+  console.log(`Hello ${name}, welcome to javascript class`);
+}
+
+greetStudent();
+greetStudent("Alex");
+
+// 5. Return values
+
 function addNewNumber(num1, num2) {
   return num1 + num2;
 }
