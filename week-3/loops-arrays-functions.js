@@ -164,18 +164,39 @@ loop6(array2);
 // 2. Returns a **new array** with all strings converted to **uppercase**
 
 // 📌 Do NOT modify the original array
+let array3 = ["banana", "kiwi", "melon", "water melon", "peach"];
 
 function loop8(arr) {
   for (let i = 0; i < arr.length; i++) {
     console.log("Fruit:", arr[i].toUpperCase());
   }
 }
-loop8(array2);
+loop8(array3);
 
 function loops(arr) {
   for (const fruit of arr) {
-    console.log("Fruit:", fruit.toUpperCase());
+    console.log("Fruit:", fruit);
   }
 }
 
-loops(array2);
+loops(array3);
+
+// ### Task 10: Length Checker
+
+// **Use ANY loop**
+
+// Write a function that:
+
+// 1. Takes an array of strings
+// 2. Prints only strings longer than **4 characters**
+
+// 📌 Use `.length` on strings only
+
+function loop10(arr) {
+  for (const item of arr) {
+    if (item.length > 4) {
+      console.log(item);
+    }
+  }
+}
+loop10(array3);
