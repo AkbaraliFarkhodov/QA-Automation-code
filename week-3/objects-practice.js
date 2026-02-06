@@ -45,6 +45,12 @@ const car2 = {
 };
 car2.description();
 
+car2.text = function () {
+  console.log("Hi Akbarali");
+};
+console.log(car2);
+car2.text();
+
 // function usingThis(obj) {
 //   return `${this.make} is made in ${this.madeIn} in ${this.year}`;
 // }

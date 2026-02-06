@@ -13,14 +13,14 @@ function greet() {
 greet(); // I am calling the funtion
 
 // 2. parameters - Parameters are inputs you provide to a function so it can work with different data
-
+// Name inside paranthesis is called parameter.
 function newGreet(name) {
   console.log(`Hello ${name} welcome to the class`);
 }
 
 newGreet("Muhammad");
 
-// 3. Multiple parameters
+// 3. Function with Multiple parameters
 function add(num1, num2) {
   console.log(num1 + num2);
 }
@@ -52,6 +52,7 @@ function addNewNumber(num1, num2) {
   return num1 + num2;
 }
 const functionResult = addNewNumber(3, 6);
+console.log(functionResult);
 
 // 6. Arrow functions
 
