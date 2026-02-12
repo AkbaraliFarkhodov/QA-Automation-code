@@ -23,3 +23,6 @@ console.log(checkEvenOdd(2));
 console.log(checkEvenOdd(4));
 console.log(checkEvenOdd(7));
 console.log(checkEvenOdd(12));
+
+// can you comfirm if my understaning is cprrect about .this
+// “How do you usually decide between using a for loop, a while loop, or a for...of loop in real-world code?”

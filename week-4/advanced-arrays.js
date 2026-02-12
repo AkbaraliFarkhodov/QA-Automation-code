@@ -20,3 +20,5 @@ const numbersChain = [10, 13, 18, 20, 25, 32, 50, 72, 96, 102];
 
 const filteredNumbers = numbersChain.filter((num) => num % 2 === 0);
 console.log(filteredNumbers);
+
+const squaredNumbers = filteredNumbers.map;
