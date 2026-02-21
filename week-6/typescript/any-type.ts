@@ -1,0 +1,1 @@
+let randomValue: any = "Hello";

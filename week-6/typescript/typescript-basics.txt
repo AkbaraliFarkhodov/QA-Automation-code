@@ -1,0 +1,154 @@
+// ## Task 1: String Variables
+
+// 1. Create a variable called `studentName`
+// 2. Assign it your name
+// 3. Give it the correct type
+
+// Then:
+
+// 4. Create another variable called `course`
+
+// 5. Assign it a string value
+
+let studentName: string = "Akbarali";
+let course: string = `${studentName} is taking a course on typescript`;
+
+console.log(studentName);
+console.log(course);
+
+// ## Task 2: Number Variables
+
+// 1. Create a variable `age`
+// 2. Assign it a number
+// 3. Create another variable `price`
+// 4. Assign it a decimal number
+
+let age: number = 23;
+
+let price: number = 43.12;
+
+console.log(age, price);
+
+// ## Task 3: Boolean Variables
+
+// 1. Create a variable `isStudent`
+// 2. Assign it a boolean value
+// 3. Create another variable `isOnline`
+// 4. Assign it a boolean value
+
+let isStudent: boolean = true;
+let isOnline: boolean = false;
+
+console.log(isStudent, isOnline);
+
+// ## Task 4: Flexible Variable
+
+// 1. Create a variable called `randomValue`
+// 2. Give it the type `any`
+// 3. Assign:
+//     - a number
+//     - then a string
+//     - then a boolean
+
+let randomValue: any = "Typescript";
+randomValue = 43;
+randomValue = true;
+
+// ## Task 5: Let TypeScript Guess the Type
+
+// 1. Create a variable called `city`
+// 2. Assign it a string
+// 3. Do **not** specify the type
+
+// Then:
+
+// 4. Try assigning a number to it
+
+// 5. Observe the TypeScript error
+
+let city = "25";
+//city = 25 // Type 'number' is not assignable to type 'string'.ts(2322)
+
+// ## Task 6: String Array
+
+// 1. Create an array called `carBrands`
+// 2. It must only store strings
+// 3. Add at least 4 car brands
+
+let carBrands: string[] = ["toyota", "bmw", "mercedes", "nissan"];
+
+console.log(carBrands);
+
+// ## Task 7: Number Array
+
+// 1. Create an array called `scores`
+// 2. It must only store numbers
+// 3. Add at least 5 numbers
+
+let scores: number[] = [23, 43, 12, 56, 86];
+console.log(scores);
+
+// ## Task 8: Simple Object
+
+// Create an object called `user` with these properties:
+
+// - name (string)
+// - age (number)
+// - isAdmin (boolean)
+
+// Type the object correctly.
+
+let user: { name: string; age: number; isAdmin: boolean } = {
+  name: "Akbarali",
+  age: 54,
+  isAdmin: false,
+};
+
+console.log(`${user.name} is ${user.age} years old.`);
+
+// ## Task 9: Product Object
+
+// Create an object called `product` with:
+
+// - title (string)
+// - price (number)
+// - inStock (boolean)
+
+// Type the object correctly.
+
+let product: { title: string; price: number; inStock: boolean } = {
+  title: "To Kill A Mockingbird",
+  price: 99.99,
+  inStock: true,
+};
+
+console.log(
+  `${product.title} costs ${product.price} and its ${product.inStock}`,
+);
+
+// ## Task 10: Real-World Data
+
+// 1. Create an array called `students`
+// 2. Each item must be an object with:
+//     - name (string)
+//     - age (number)
+//     - isActive (boolean)
+// 3. Add at least **three students**
+
+const students: any[] = [
+  {
+    name: "Ali",
+    age: 22,
+    isActive: true,
+  },
+  {
+    name: "ronaldo",
+    age: 40,
+    isActive: false,
+  },
+  {
+    name: "messi",
+    age: 38,
+    isActive: true,
+  },
+];
