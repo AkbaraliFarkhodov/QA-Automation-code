@@ -346,3 +346,51 @@ console.log(prices);
 // Uses a mathematical operation
 
 // Stores the transformed result
+
+//----------------------------------------------------------------------------
+
+// function createCircle(radius) {
+//   return {
+//     radius,
+//     draw: function () {
+//       console.log(`draw`);
+//     },
+//   };
+// }
+
+// const circle = createCircle(1);
+
+// circle.draw();
+
+// // Constructor Function
+
+// function Circle(radius) {
+//   this.radius = radius;
+//   this.draw = function () {
+//     console.log(`draw`);
+//   };
+// }
+
+// const another = new Circle(1);
+
+// another.Circle();
+
+console.log("Start");
+
+setTimeout(() => {
+  console.log("Done");
+}, 3000);
+
+console.log("End");
+
+function getData() {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve("Data received");
+    }, 2000);
+  });
+}
+
+getData().then((data) => {
+  console.log(data);
+});
